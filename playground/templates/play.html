@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+            /* border: 1px dotted red; */
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            /* background-color: darkcyan; */
+            height: 150px;
+            width: 150px;
+            border: 5px solid black;
+            margin: 20px
+        }
+
+
+        header {
+            display: flex;
+            padding: 25px;
+            width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin: auto;
+        }
+
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 25px;
+            width: 1200px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            {{greeting}}
+        </h1>
+        <main>
+            {%for i in range(0,some_num):%}
+            <div class="box" style="background-color: {{box_color}}"></div>
+            {%endfor%}
+        </main>
+    </header>
+
+
+
+
+</body>
+
+</html>
