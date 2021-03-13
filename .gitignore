@@ -1,0 +1,8 @@
+jinja_basic_setup/jinja_basics.py
+jinja_basic_setup/templates/index.html
+superheroes/superheroes.py
+superheroes/static/css/style.css
+superheroes/templates/index.html
+superheroes/test_server.py
+superheroes/__pycache__/test_server.cpython-39.pyc
+superheroes/templates/base.html

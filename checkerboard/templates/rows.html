@@ -5,20 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
     <title>Checkerboard</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+            ;
+        }
+
+        #wrapper {
+            padding: 25px;
+            font-size: 0;
+
+        }
+
+        table tr td {
+            width: 60px;
+            height: 60px;
+        }
+
+        .color1 {
+            background-color: #004c54;
+        }
+
+        .color2 {
+            background-color: #a5acaf;
+        }
+    </style>
 </head>
 
 <body>
-    <table>
-        {%for i in range (rows):%}
-        <tr>
-            {%for j in range(8):%}
-            <td class='color{{(i+j)%2+1}}'> </td>
+    <div id="wrapper">
+        <table>
+            {%for i in range (rows):%}
+            <tr>
+                {%for j in range(8):%}
+                <td class='color{{(i+j)%2+1}}'> </td>
+                {%endfor%}
+            </tr>
             {%endfor%}
-        </tr>
-        {%endfor%}
-    </table>
+        </table>
+    </div>
 </body>
 
 </html>
