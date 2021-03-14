@@ -6,3 +6,4 @@ superheroes/templates/index.html
 superheroes/test_server.py
 superheroes/__pycache__/test_server.cpython-39.pyc
 superheroes/templates/base.html
+form_test/
