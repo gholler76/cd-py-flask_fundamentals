@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Survey Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Welcome to the Survey Page</h1>
+        </header>
+        <main>
+
+            <div class="form-group">
+                <form action="/result" method="post" style="width: 500px">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" name="student_name">
+                    <label for="exampleInputEmail1">State</label>
+                    <input type="text" class="form-control" name="state">
+                    <label for="exampleInputEmail1">Enter comments here!</label>
+                    <p><textarea name="comments" id="exampleInputEmail1" name="comments" input type="text"
+                            class="form-control"></textarea></p>
+                    <input type="submit">
+                </form>
+            </div>
+            <!-- <form action="/result" method="post">
+                <p>Name<input type="text" name="student_name"></p>
+                <p>State<input type="text" name="state"></p>
+                <p><textarea name="comments"></textarea></p>
+                <input type="submit">
+            </form> -->
+        </main>
+    </div>
+</body>
+
+</html>
